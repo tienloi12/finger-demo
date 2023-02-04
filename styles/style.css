@@ -40,6 +40,12 @@
     opacity: 1;
 }
 
+button#btn-add {
+    margin-top: 12px;
+    background-color: #426EF0;
+    padding: 8px;
+}
+
 #btn-play {
     margin-top: 12px;
     width: 50%;
