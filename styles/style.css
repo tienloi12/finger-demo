@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 .container {
     display: flex;
     justify-content: center;
@@ -40,12 +38,6 @@
     opacity: 1;
 }
 
-button#btn-add {
-    margin-top: 12px;
-    background-color: #426EF0;
-    padding: 8px;
-}
-
 #btn-play {
     margin-top: 12px;
     width: 50%;
@@ -57,18 +49,18 @@ button#btn-add {
     font-size: 16px;
 }
 
-#btn-play:hover {
+#btn-play:hover, button#btn-add:hover {
     cursor: pointer;
     opacity: 0.7;
 }
 
 .finger p {
     margin: 12px 0;
+    font-size: 20px;
 }
 
 #sub-text {
     margin-bottom: 12px;
-    opacity: 0;
 }
 
 #characters {
@@ -100,5 +92,14 @@ button#btn-add {
     cursor: pointer;
 }
 
+button#btn-add {
+    background-color: #426EF0;
+    padding: 8px;
+    width: 20%;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    margin-top: 8px;
+}
 
 

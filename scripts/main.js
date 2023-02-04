@@ -33,13 +33,13 @@ function check() {
     if (text.value != "") {
         if (text.value == word.innerHTML) {
             word.innerHTML = arrayWord[randomIndex()]
-            subText.innerHTML = "Ban da dung"
-            subText.setAttribute("style", "opacity: 1; color: green;")
+            subText.innerHTML = "You are right"
+            subText.setAttribute("style", "color: green;")
             count += 5 
             score.innerHTML = count
         } else {
-            subText.innerHTML = "Ban da sai"
-            subText.setAttribute("style", "opacity: 1; color: red;")
+            subText.innerHTML = "You are wrong"
+            subText.setAttribute("style", "color: red;")
         }
         text.value = ""
         text.focus()
@@ -92,8 +92,11 @@ function countDownTimer() {
                 clearInterval(intervalld)
                 text.removeEventListener("keypress", Key)
                 // characters.removeEventListener("click", clicked)
+                btnAdd.removeEventListener("click", check)
                 text.value = ""
                 subText.setAttribute("style", "opacity: 1")
+                subText.innerHTML = "Click play button to play game again"
+                document.getElementById("input-text").disabled = true
             }
         },
         1000
