@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.finger {
+    background-color: #ccc;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.finger__header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#input-text {
+    width: 100%;
+    padding: 16px;
+    font-size: 20px;    
+    border-radius: 5px;
+    border: none;
+}
+
+#input-text:focus {
+    outline: none;
+    opacity: 1;
+}
+
+#btn-play {
+    margin-top: 12px;
+    width: 50%;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #426EF0;
+    color: white;
+    font-size: 16px;
+}
+
+#btn-play:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.finger p {
+    margin: 12px 0;
+}
+
+#sub-text {
+    margin-bottom: 12px;
+    opacity: 0;
+}
+
+#characters {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-1, .row-2, .row-3 {
+    display: flex;
+    justify-content: center;
+}
+
+#characters button{
+    background-color: #333;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px;
+    border: none;
+    border-bottom: 5px solid #222;
+    border-left: 2px solid #222;
+    color: white;
+}
+
+#characters button:hover{
+    cursor: pointer;
+}
+
+
+
